@@ -14,8 +14,8 @@ public class AmazonConfig {
     @Bean
     public AmazonS3 s3(){
         AWSCredentials awsCredentials = new BasicAWSCredentials(
-                "AKIASVTTGWU6EOGIEL5C",
-                "2dpb6g5+4qd62Vki3kX05m/8FhdYgXZe12yGnO6e");
+                "key",
+                "value");
         return AmazonS3ClientBuilder
                 .standard().withRegion("eu-west-1")
                 .withCredentials(new AWSStaticCredentialsProvider(awsCredentials))
